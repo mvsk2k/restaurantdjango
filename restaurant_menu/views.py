@@ -8,7 +8,8 @@ class MenuList(generic.ListView):
     template_name = "index.html"
 
     def get_context_data(self):
-        context = {"meals": "Pizza"}
+        context = {"meals": ["Pizza", "Pasta"],
+                   "Ingredients": ["Things"]}
         return context
 
 
